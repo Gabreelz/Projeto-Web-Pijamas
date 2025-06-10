@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pijamas Masculinos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="header-inner">
+  <div class="logo">  
+    <img src="imagens/logo.png" alt="Logo">
+ </div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="catalogo">
+      <div class="titulo">
+        <h2>Pijamas Masculinos</h2>
+      <div class="whatsapp-group">
+        <span>Peça do seu jeito</span>
+          <a class="whatsapp-button" href="https://wa.me/5599999999999" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      Whatsapp
+    </a>
+  </div>
+</div>
+
+
+      <!-- Carrossel 1 -->
+      <div class="carrossel-container">
+        <button class="arrow left" onclick="scrollCarrossel('carrossel1', -1)">&#8249;</button>
+        <div class="carrossel" id="carrossel1">
+          <div class="produto"><img src="imagens/d1.jpg"><h3>Produto 1</h3><p>Descrição do produto</p><p><strong>R$ 49,90</strong></p></div>
+          <div class="produto"><img src="imagens/d2.jpg"><h3>Produto 2</h3><p>Descrição do produto</p><p><strong>R$ 54,90</strong></p></div>
+          <div class="produto"><img src="imagens/d3.jpg"><h3>Produto 3</h3><p>Descrição do produto</p><p><strong>R$ 59,90</strong></p></div>
+          <div class="produto"><img src="imagens/d4.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+          <div class="produto"><img src="imagens/d5.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+          <div class="produto"><img src="imagens/d6.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+        </div>
+        <button class="arrow right" onclick="scrollCarrossel('carrossel1', 1)">&#8250;</button>
+      </div>
+
+      <div class="titulo-meio">
+        <h2>Pijamas Femininos</h2>
+      </div>
+
+      <!-- Carrossel 2 -->
+      <div class="carrossel-container">
+        <button class="arrow left" onclick="scrollCarrossel('carrossel2', -1)">&#8249;</button>
+        <div class="carrossel" id="carrossel2">
+          <div class="produto"><img src="imagens/d1.jpg"><h3>Produto 1</h3><p>Descrição do produto</p><p><strong>R$ 49,90</strong></p></div>
+          <div class="produto"><img src="imagens/d2.jpg"><h3>Produto 2</h3><p>Descrição do produto</p><p><strong>R$ 54,90</strong></p></div>
+          <div class="produto"><img src="imagens/d3.jpg"><h3>Produto 3</h3><p>Descrição do produto</p><p><strong>R$ 59,90</strong></p></div>
+          <div class="produto"><img src="imagens/d4.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+          <div class="produto"><img src="imagens/d5.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+          <div class="produto"><img src="imagens/d6.jpg"><h3>Produto 4</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+        </div>
+        <button class="arrow right" onclick="scrollCarrossel('carrossel2', 1)">&#8250;</button>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="site-name">NK pijamas</div>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="icon" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="icon" /></a>
+    </div>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

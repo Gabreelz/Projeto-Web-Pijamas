@@ -19,7 +19,7 @@ header {
 .header-inner {
   background-color: #f5b7c6;
   width: 60%; 
-  padding: 16px 40px;
+  padding: 5px 5px;
   border-radius: 0 0 16px 16px; 
   display: flex;
   justify-content: space-between;
@@ -30,14 +30,9 @@ header {
   left: 0;
 }
 
-.logo {
-  font-weight: bold;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
+.logo img { 
+  height: auto; 
+  width: 70px; 
 }
 
 nav a {

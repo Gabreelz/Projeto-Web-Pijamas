@@ -18,9 +18,9 @@ header {
 
 .header-inner {
   background-color: #f5b7c6;
-  width: 60%; /* ocupa toda a largura */
-  padding: 16px 40px;
-  border-radius: 0 0 16px 16px; /* só cantos inferiores arredondados */
+  width: 60%; 
+  padding: 5px 5px;
+  border-radius: 0 0 16px 16px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +32,9 @@ header {
 
 
 
-.logo {
-  font-weight: bold;
+.logo img { 
+  height: auto; 
+  width: 70px; 
 }
 
 nav a {
@@ -284,4 +285,84 @@ nav a {
 
 .promocao-linha .item button:hover {
   background-color: #d81b60;
+}
+
+.footer {
+  background-color: white;
+  color: #000;
+  padding: 2rem 1rem; 
+  font-family: sans-serif;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  padding: 6px;
+  transition: background-color 0.3s;
+}
+
+.social-icons img:hover {
+  background-color: #ccc;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right nav {
+    justify-content: center;
+  }
+
+  main {
+    padding: 40px 16px; 
+  }
 }
