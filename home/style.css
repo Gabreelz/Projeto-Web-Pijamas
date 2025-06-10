@@ -1,58 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    /* Reset e base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+header {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background-color: #fffafc;
-      color: #333;
-    }
+.header-inner {
+  background-color: #f5b7c6;
+  width: 60%; /* ocupa toda a largura */
+  padding: 16px 40px;
+  border-radius: 0 0 16px 16px; /* só cantos inferiores arredondados */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-    header {
-      background-color: #f48fb1;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
 
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
 
-    .logo {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-    }
+.logo {
+  font-weight: bold;
+}
 
-    header h1 {
-      font-size: 1.8rem;
-      color: white;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 20px;
-    }
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
 
     .catalogo {
       padding: 40px 20px;
@@ -104,95 +92,70 @@
       text-align: left;
     }
 
-    /* Promoções - Carrossel 3 por vez com botões */
-
-    .carousel-promocoes-container {
-      position: relative;
-      overflow: hidden;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .carousel-promocoes {
-      display: flex;
-      width: calc(33.3333% * 6);
-      transition: transform 0.5s ease;
-    }
-
-    .carousel-promocoes .carousel-item {
-      flex: 0 0 33.3333%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .img-promocao {
-  width: 150px;   /* Reduz a largura da imagem */
-  height: auto;   /* Mantém a proporção */
-  border-radius: 8px;
-  margin-bottom: 10px;
+    .carrossel-container {
+  position: relative;
+  margin-bottom: 60px; /* Aumentado */
+  overflow: hidden;
+  padding: 0 40px;
 }
 
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 1rem 0;
+  scrollbar-width: none;
+}
 
-    .carousel-promocoes .caption {
-      margin-top: 8px;
-      text-align: center;
-    }
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
 
-    .carousel-promocoes .caption h3,
-    .carousel-promocoes .caption h4,
-    .carousel-promocoes .caption h5,
-    .carousel-promocoes .caption h6 {
-      color: #d81b60;
-      margin-bottom: 5px;
-    }
+.produto {
+  flex: 0 0 22%;
+  max-width: 22%;
+  background-color: #eee;
+  padding: 2rem; /* Aumentado */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
 
-    .carousel-promocoes .caption p {
-      font-size: 0.9rem;
-      margin-bottom: 8px;
-    }
+.produto:hover {
+  transform: scale(1.03);
+}
 
-    .carousel-promocoes .caption button {
-      padding: 6px 12px;
-      background-color: #f48fb1;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.produto img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-    .carousel-promocoes .caption button:hover {
-      background-color: #d81b60;
-    }
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
-    /* Botões do carrossel promoções */
-    .carousel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      border: none;
-      color: white;
-      font-size: 30px;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 10;
-      border-radius: 50%;
-      user-select: none;
-      transition: background-color 0.3s ease;
-    }
+.arrow.left {
+  left: 10px;
+}
 
-    .carousel-btn:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .carousel-btn.prev {
-      left: 5px;
-    }
-
-    .carousel-btn.next {
-      right: 5px;
-    }
+.arrow.right {
+  right: 10px;
+}
 
     /* Feedbacks - itens padrão em linha flexível */
 
@@ -235,51 +198,6 @@
       font-size: 0.9rem;
     }
 
-    /* Contato */
-
-    .contato {
-      background-color: #fff0f5;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .contato h2 {
-      color: #d81b60;
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-    }
-
-    .contato form {
-      max-width: 500px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .contato input,
-    .contato textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      resize: vertical;
-    }
-
-    .contato button {
-      background-color: #f48fb1;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .contato button:hover {
-      background-color: #d81b60;
-    }
 
     footer {
       background-color: #f48fb1;

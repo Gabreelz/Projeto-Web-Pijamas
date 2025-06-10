@@ -30,11 +30,14 @@ header {
   left: 0;
 }
 
-
-
-
 .logo {
   font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
 }
 
 nav a {
