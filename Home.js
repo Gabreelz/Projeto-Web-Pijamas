@@ -1,5 +1,8 @@
-
-    // Carrossel Destaques simples
+  function toggleMenu() {
+    document.querySelector('nav.menu').classList.toggle('active');
+  }
+  
+   // Carrossel Destaques simples
     (() => {
       const items = document.querySelectorAll('.carousel-destaques .carousel-item');
       let currentIndex = 0;
