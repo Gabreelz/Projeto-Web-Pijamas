@@ -179,29 +179,34 @@ function populateProductDetails(product) {
   const mainImage = document.getElementById('imagemPrincipal');
   const thumbnailsContainer = document.getElementById('thumbnails-container');
   thumbnailsContainer.innerHTML = '';
+  // Garante que o container de miniaturas seja visível por padrão
+  thumbnailsContainer.style.display = 'flex';
 
-  product.images.forEach((imagePath, index) => {
-    if (index === 0) {
-      mainImage.src = imagePath;
-    }
-    const thumb = document.createElement('img');
-    thumb.src = imagePath;
-    thumb.alt = `Miniatura ${index + 1} de ${product.name}`;
-    thumb.className = 'thumb-item';
-    if (index === 0) thumb.classList.add('active');
-    thumb.onclick = () => mudarImagem(thumb);
-    thumbnailsContainer.appendChild(thumb);
-  });
+
+  // --- AJUSTE IMPORTANTE AQUI ---
+  // Apenas mostra as miniaturas se houver MAIS DE UMA imagem.
+  if (product.images.length > 1) {
+    product.images.forEach((imagePath, index) => {
+      const thumb = document.createElement('img');
+      thumb.src = imagePath;
+      thumb.alt = `Miniatura ${index + 1} de ${product.name}`;
+      thumb.className = 'thumb-item';
+      if (index === 0) thumb.classList.add('active');
+      thumb.onclick = () => mudarImagem(thumb);
+      thumbnailsContainer.appendChild(thumb);
+    });
+  } else {
+    // Se tiver apenas uma imagem, esconde a área de miniaturas.
+    thumbnailsContainer.style.display = 'none';
+  }
+
+  // Define a imagem principal (sempre a primeira da lista)
+  if (product.images.length > 0) {
+    mainImage.src = product.images[0];
+  }
   
   const whatsappLink = document.getElementById('whatsapp-link');
   const message = encodeURIComponent(`Olá! Tenho interesse no produto: ${product.name}`);
-  whatsappLink.href = `https://wa.me/5599999999999?text=${message}`;
-}
-
-function mudarImagem(thumbnailElement) {
-  const imagemPrincipal = document.getElementById('imagemPrincipal');
-  imagemPrincipal.src = thumbnailElement.src;
-
-  document.querySelectorAll('.thumb-item').forEach(thumb => thumb.classList.remove('active'));
-  thumbnailElement.classList.add('active');
+  // Lembre-se de colocar seu número de WhatsApp aqui
+  whatsappLink.href = `https://wa.me/55SEUNUMERO?text=${message}`;
 }
