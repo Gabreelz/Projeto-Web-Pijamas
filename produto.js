@@ -6,9 +6,7 @@ const products = {
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
       'imagens/d1.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -16,14 +14,12 @@ const products = {
       'Tamanhos personalizados sob medida (consulte)'
     ]
   },
-    'pijama-verao-feminino-2': {
+  'pijama-verao-feminino-2': {
     name: 'Pijama de Verão Feminino de Bolinhas',
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
       'imagens/d2.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -31,14 +27,12 @@ const products = {
       'Tamanhos personalizados sob medida (consulte)'
     ]
   },
-   'pijama-verao-feminino-3': {
+  'pijama-verao-feminino-3': {
     name: 'Pijama de Verão Feminino Cuelinho',
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
-      'imagens/d3.jpg'
-      
+      'imagens/d3.png'
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -46,14 +40,12 @@ const products = {
       'Tamanhos personalizados sob medida (consulte)'
     ]
   },
-   'pijama-verao-feminino-4': {
+  'pijama-verao-feminino-4': {
     name: 'Pijama de Verão Feminino',
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
-      'imagens/d4.jpg'
-      
+      'imagens/d4.png'
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -66,9 +58,7 @@ const products = {
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
       'imagens/d5.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -81,9 +71,7 @@ const products = {
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      ,
-      'imagens/d6.jpg'
-      
+      'imagens/d6.png'
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -91,32 +79,25 @@ const products = {
       'Tamanhos personalizados sob medida (consulte)'
     ]
   },
-
   'pijama-verao-feminino-7': {
-    name: 'Pijama de Verão Feminino Sorvete',
+    name: 'Pijama de Verão Feminino',
     price: 'R$ 59,90',
     description: 'Um pijama leve e confortável, perfeito para as noites quentes de verão. Feito com tecido respirável para garantir seu conforto.',
     images: [
-      
-      'imagens/p1.jpg'
-      
+      'imagens/p1.png'
     ],
     details: [
-   'Pagamento via crédito, débito ou pix',
+      'Pagamento via crédito, débito ou pix',
       'Disponível nos tamanhos P, M, G e GG',
       'Tamanhos personalizados sob medida (consulte)'
     ]
-    
   },
-
   'pijama-inverno-masculino-1': {
     name: 'Pijama de Inverno Masculino Listrado',
     price: 'R$ 79,90',
     description: 'Conforto e estilo para suas noites frias. Feito com material de alta qualidade para garantir o melhor descanso.',
     images: [
-      
       'imagens/p4.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -125,15 +106,12 @@ const products = {
       'Tamanhos personalizados sob medida (consulte)'
     ]
   },
-
-   'pijama-inverno-masculino-2': {
-    name: 'Pijama de Inverno Masculino ',
+  'pijama-inverno-masculino-2': {
+    name: 'Pijama de Inverno Masculino',
     price: 'R$ 79,90',
     description: 'Conforto e estilo para suas noites frias. Feito com material de alta qualidade para garantir o melhor descanso.',
     images: [
-      
       'imagens/p2.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -143,13 +121,11 @@ const products = {
     ]
   },
   'pijama-inverno-feminino-1': {
-    name: 'Pijama de Inverno Feminino ',
+    name: 'Pijama de Inverno Feminino',
     price: 'R$ 79,90',
     description: 'Conforto e estilo para suas noites frias. Feito com material de alta qualidade para garantir o melhor descanso.',
     images: [
-      
       'imagens/p3.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -159,13 +135,11 @@ const products = {
     ]
   },
   'pijama-inverno-feminino-2': {
-    name: 'Pijama de Inverno Feminino Rosa ',
+    name: 'Pijama de Inverno Feminino Rosa',
     price: 'R$ 79,90',
     description: 'Conforto e estilo para suas noites frias. Feito com material de alta qualidade para garantir o melhor descanso.',
     images: [
-      
       'imagens/p5.jpg'
-      
     ],
     details: [
       'Pagamento via crédito, débito ou pix',
@@ -173,10 +147,8 @@ const products = {
       'Ideal para noites de inverno',
       'Tamanhos personalizados sob medida (consulte)'
     ]
-  },
-  // Adicione todos os seus outros produtos aqui com um ID único
+  }
 };
-
 
 // Passo 2: O resto do código funciona da mesma forma, lendo os dados do objeto acima.
 document.addEventListener('DOMContentLoaded', () => {
@@ -223,7 +195,7 @@ function populateProductDetails(product) {
   
   const whatsappLink = document.getElementById('whatsapp-link');
   const message = encodeURIComponent(`Olá! Tenho interesse no produto: ${product.name}`);
-  whatsappLink.href = `https://wa.me/55SEUNUMERO?text=${message}`;
+  whatsappLink.href = `https://wa.me/5599999999999?text=${message}`;
 }
 
 function mudarImagem(thumbnailElement) {
