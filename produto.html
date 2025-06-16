@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalhes do Produto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <div class="header-inner">
+  <div class="logo">  
+    <img src="../Catalogo/imagens/logo.png" alt="Logo">
+ </div>
+    <nav>
+      <a href="../home/Inicio.html">Início</a>
+      <a href="../Catalogo/Catalogo.html">Catálogo</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="produto-detalhe">
+    <div class="galeria-container">
+      <div class="thumbnails">
+        <img src="../Catalogo/imagens/d1.jpg" alt="Thumbnail 1" class="thumb-item active" onclick="mudarImagem(this)">
+        <img src="../Catalogo/imagens/d2.jpg" alt="Thumbnail 2" class="thumb-item" onclick="mudarImagem(this)">
+        <img src="../Catalogo/imagens/d3.png" alt="Thumbnail 3" class="thumb-item" onclick="mudarImagem(this)">
+      </div>
+      <div class="main-image">
+        <img src="../Catalogo/imagens/d1.jpg" alt="Imagem Principal do Produto" id="imagemPrincipal">
+      </div>
+    </div>
+
+    <div class="info-container">
+      <h1>Pijama Masculino Básico</h1>
+      <p class="descricao">
+        Conforto e estilo para suas noites. Feito com material de alta qualidade para garantir o melhor descanso.
+      </p>
+      <ul class="detalhes-tecnicos">
+        <li>- Poliéster com toque de algodão</li>
+        <li>- Disponível nos tamanhos P, M, G e GG</li>
+        <li>- Tamanhos personalizados sob medida (consulte)</li>
+      </ul>
+      <p class="preco"><strong>R$ 54,90</strong></p>
+      <div class="whatsapp-group">
+        <span>Peça o seu agora mesmo!</span>
+        <a class="whatsapp-button" href="https://wa.me/5599999999999" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          Pedir no Whatsapp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="destaques">
+    <div class="titulo-destaques">
+      <h2>Destaques</h2>
+    </div>
+    <div class="carrossel-container">
+      <button class="arrow left" onclick="scrollCarrossel('carrosselDestaques', -1)">&#8249;</button>
+      <div class="carrossel" id="carrosselDestaques">
+        <div class="produto"><img src="../Catalogo/imagens/d4.png"><h3>Produto Destaque 1</h3><p>Descrição do produto</p><p><strong>R$ 59,90</strong></p></div>
+        <div class="produto"><img src="../Catalogo/imagens/d5.jpg"><h3>Produto Destaque 2</h3><p>Descrição do produto</p><p><strong>R$ 60,00</strong></p></div>
+        <div class="produto"><img src="../Catalogo/imagens/d6.png"><h3>Produto Destaque 3</h3><p>Descrição do produto</p><p><strong>R$ 49,90</strong></p></div>
+        <div class="produto"><img src="../Catalogo/imagens/d1.jpg"><h3>Produto Destaque 4</h3><p>Descrição do produto</p><p><strong>R$ 54,90</strong></p></div>
+      </div>
+      <button class="arrow right" onclick="scrollCarrossel('carrosselDestaques', 1)">&#8250;</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="site-name">NK pijamas</div>
+    <div class="social-icons">
+      <a href="#"><img src="../Catalogo/imagens/zap.jpg" alt="icon" /></a>
+      <a href="#"><img src="../Catalogo/imagens/insta.webp" alt="icon" /></a>
+    </div>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <a href="../home/Inicio.html">Início</a>
+      <a href="../Catalogo/Catalogo.html">Catálogo</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
