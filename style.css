@@ -365,33 +365,36 @@ nav.menu a {
   right: 10px;
 }
 
+.produto {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.produto:active {
+  transform: scale(0.98);
+}
+
 /* ===================
    DESTAQUES
 =================== */
 .destaques {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  justify-content: center; /* centraliza as imagens horizontalmente */
+  gap: 20px; /* espaço entre elas */
+  flex-wrap: wrap; /* quebra em telas pequenas */
+  margin-top: 20px;
 }
 
-.destaques .produto {
-  flex: 1 1 300px;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #f1e7c5;
-  text-align: center;
-}
-
-.destaques .produto img {
-  width: 100%;
+.produto-combo img {
+  width: 100%; /* ajuste conforme necessário */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ===================

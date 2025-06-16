@@ -21,14 +21,11 @@
         <a href="Home.html">Início</a>
         <a href="Catalogo.html">Catálogo</a>
         <a href="sobre.html">Sobre</a>
-
       </nav>
-
 
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
   </header>
-
 
   <main>
     <section class="pro1">
@@ -40,7 +37,7 @@
           <div class="caption">
             <h3>Pijama Estrela</h3>
             <p>Conforto e estilo para suas noites.</p>
-            <button>Ver Produto</button>
+            <button onclick="window.location.href='Catalogo.html'">Ver Produto</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -48,7 +45,7 @@
           <div class="caption">
             <h3>Pijama Fluffy</h3>
             <p>Toque macio e quentinho para o inverno.</p>
-            <button>Ver Produto</button>
+            <button onclick="window.location.href='Catalogo.html'">Ver Produto</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -56,7 +53,7 @@
           <div class="caption">
             <h3>Pijama Floral</h3>
             <p>Estampa delicada e confortável.</p>
-            <button>Ver Produto</button>
+            <button onclick="window.location.href='Catalogo.html'">Ver Produto</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -64,56 +61,55 @@
           <div class="caption">
             <h3>Pijama Floral</h3>
             <p>Estampa delicada e confortável.</p>
-            <button>Ver Produto</button>
+            <button onclick="window.location.href='Catalogo.html'">Ver Produto</button>
           </div>
         </div>
       </div>
     </section>
 
-
-    <!-- Promoções - carrossel 3 por vez -->
+    <!-- Promoções -->
     <div class="carrossel-pro2">
       <h2>Promoções</h2>
       <button class="arrow left" onclick="scrollCarrossel('carrossel1', -1)">&#8249;</button>
       <div class="carrossel" id="carrossel1">
-        <div class="produto"><img src="imagens/d1.jpg">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-1'">
+          <img src="imagens/d1.jpg">
           <h3>Doce Sonho</h3>
         </div>
-        <div class="produto"><img src="imagens/d2.jpg">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-2'">
+          <img src="imagens/d2.jpg">
           <h3>Nuvem de Algodão</h3>
         </div>
-        <div class="produto"><img src="imagens/d3.png">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-3'">
+          <img src="imagens/d3.png">
           <h3>Encanto Floral</h3>
         </div>
-        <div class="produto"><img src="imagens/d4.png">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-4'">
+          <img src="imagens/d4.png">
           <h3>Café & Conforto</h3>
         </div>
-        <div class="produto"><img src="imagens/d5.jpg">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-5'">
+          <img src="imagens/d5.jpg">
           <h3>Luar Rosé</h3>
-          </p>
         </div>
-        <div class="produto"><img src="imagens/d6.png">
+        <div class="produto" onclick="window.location.href='produto.html?id=pijama-verao-feminino-6'">
+          <img src="imagens/d6.png">
           <h3>Estrela da Noite</h3>
-          </p>
         </div>
       </div>
       <button class="arrow right" onclick="scrollCarrossel('carrossel1', 1)">&#8250;</button>
     </div>
 
     <!-- Destaques -->
-
     <h2>Combos Familia</h2>
     <div class="destaques">
-
-      <div class="d1">
+      <div class="Produto-combo">
         <img src="imagens/pose 1.png" alt="Pijama mãe e filha">
       </div>
-      <div class="d1">
+      <div class="Produto-Combo">
         <img src="imagens/pose 2.png" alt="Pijama pai e filho">
       </div>
     </div>
-
-
 
     <!-- Serviços -->
     <section class="servicos">
@@ -143,9 +139,6 @@
       </div>
     </section>
 
-
-
-
     <footer class="footer-home">
       <div class="footer-left">
         <div class="site-name">NK Pijamas</div>
@@ -169,14 +162,31 @@
 
       <div class="footer-bottom">
         <p>
-          NK Pijamas | CNPJ: <br>
-          Rua - Maringá/PR - CEP: 89112-460<br>
-          © Direitos Reservados — <a href="Home.html">Home</a>
+          © NK Pijamas 2025 - Todos os direitos reservados.<br>
+          Site desenvolvido por UNICV - EWS </a>
         </p>
       </div>
     </footer>
 
     <script src="Home.js"></script>
+
+    <!-- Estilos para melhorar a interação dos produtos -->
+    <style>
+    .produto {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .produto:active {
+      transform: scale(0.98);
+    }
+    </style>
+
 </body>
 
 </html>
