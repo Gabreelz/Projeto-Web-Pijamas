@@ -1,6 +1,96 @@
 /* ===================
    GLOBAL STYLES
 =================== */
+
+
+/* ...Sobre nos... */
+
+/* SOBRE NÓS - NOVO ESTILO */
+.containersobre {
+  display: flex;
+  min-height: 500px;
+  height: 70vh;
+  max-width: 100vw;
+  background: #f8e3ea;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imagesobre {
+  flex: 3 1 60%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: #f8e3ea;
+  min-width: 0;
+}
+
+.imagesobre img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* alterado de cover para contain */
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  background: #f0cdab;
+}
+
+.textsobre {
+  flex: 1 1 50%;
+  background: #f0cdab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 48px 60px 48px;
+  min-width: 0;
+}
+
+.textsobre h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.textsobre h3 {
+  font-size: 1.1rem;
+  color: #b8b8b8;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.textsobre p {
+  color: #222;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+/* fim sobre nos */
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .containersobre {
+    flex-direction: column;
+    min-height: unset;
+    height: auto;
+  }
+  .imagesobre, .textsobre {
+    flex: unset;
+    width: 100%;
+    min-height: 250px;
+    padding: 0;
+  }
+  .textsobre {
+    padding: 32px 16px;
+  }
+}
+
+/* ...existing code... */
+
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
