@@ -1,5 +1,5 @@
 /* ===================
-   GLOBAL STYLES
+   GLOBAL STYLES
 =================== */
 body {
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 /* ===================
-   HEADER
+   HEADER
 =================== */
 header {
   background-color: transparent;
@@ -81,7 +81,7 @@ nav.menu a {
 }
 
 /* ===================
-   CARROSSEL DESTAQUES
+   CARROSSEL DESTAQUES
 =================== */
 .pro1 {
   padding: 40px 20px;
@@ -206,10 +206,10 @@ nav.menu a {
 }
 
 /* ===================
-   CARROSSEL PRODUTOS
+   CARROSSEL PRODUTOS
 =================== */
 .carrossel-pro2 {
-  background-color: #eb445b;
+  background-color: #f0cdab;
   position: relative;
   margin-bottom: 60px;
   overflow: hidden;
@@ -276,7 +276,7 @@ nav.menu a {
 }
 
 /* ===================
-   DESTAQUES
+   DESTAQUES
 =================== */
 .destaques {
   display: flex;
@@ -305,7 +305,7 @@ nav.menu a {
 }
 
 /* ===================
-   LISTA DE CARROSSEL
+   LISTA DE CARROSSEL
 =================== */
 .lista-carousel {
   display: flex;
@@ -347,7 +347,7 @@ nav.menu a {
 }
 
 /* ===================
-   PROMOÇÕES - CATALOGO
+   PROMOÇÕES - CATALOGO
 =================== */
 .catalogo .titulo {
   display: flex;
@@ -473,7 +473,7 @@ nav.menu a {
 }
 
 /* ===================
-   WHATSAPP BUTTON
+   WHATSAPP BUTTON
 =================== */
 .whatsapp-button {
   display: inline-flex;
@@ -502,7 +502,7 @@ nav.menu a {
 }
 
 /* ===================
-   FOOTER - ESTILO GERAL
+   FOOTER - ESTILO GERAL
 =================== */
 .footer-bottom {
   width: 100%;
@@ -712,7 +712,7 @@ footer,
 
 
 /* ===================
-   MAIN
+   MAIN
 =================== */
 main {
   flex: 1;
@@ -721,7 +721,7 @@ main {
 }
 
 /* ===================
-   RESPONSIVO GLOBAL (aplica-se a todas as páginas)
+   RESPONSIVO GLOBAL (aplica-se a todas as páginas)
 =================== */
 @media (max-width: 768px) {
   .logo {
