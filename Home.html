@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loja</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- <header>
-  <div class="header-inner">
-    <div class="logo">  
-      <a href="Home.html">
-        <img src="imagens/logo.png" alt="Logo">
-      </a>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <a href="Home.html">
+          <img src="imagens/logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <nav class="menu">
+        <a href="Home.html">Início</a>
+        <a href="Catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+
+      </nav>
+
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </div>
-
-    <nav class="menu">
-      <a href="Home.html">Início</a>
-      <a href="Catalogo.html">Catálogo</a>
-      <a href="sobre.html">Sobre</a>
-    </nav>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  </div>
-</header>
+  </header>
 
 
   <main>
     <section class="pro1">
-      <h2>NIKA Pijamas</h2>
+      <h2>NK Pijamas</h2>
+
       <div class="carousel-destaques">
         <div class="carousel-item active">
           <img src="imagens/pose 3.png" alt="Pijama Estrela" />
@@ -65,36 +70,51 @@
       </div>
     </section>
 
+
     <!-- Promoções - carrossel 3 por vez -->
     <div class="carrossel-pro2">
       <h2>Promoções</h2>
-        <button class="arrow left" onclick="scrollCarrossel('carrossel1', -1)">&#8249;</button>
-        <div class="carrossel" id="carrossel1">
-          <div class="produto"><img src="imagens/d1.jpg"><h3>Doce Sonho</h3></div>
-          <div class="produto"><img src="imagens/d2.jpg"><h3>Nuvem de Algodão</h3></div>
-          <div class="produto"><img src="imagens/d3.png"><h3>Encanto Floral</h3></div>
-          <div class="produto"><img src="imagens/d4.png"><h3>Café & Conforto</h3></div>
-          <div class="produto"><img src="imagens/d5.jpg"><h3>Luar Rosé</h3></p></div>
-          <div class="produto"><img src="imagens/d6.png"><h3>Estrela da Noite</h3></p></div>
+      <button class="arrow left" onclick="scrollCarrossel('carrossel1', -1)">&#8249;</button>
+      <div class="carrossel" id="carrossel1">
+        <div class="produto"><img src="imagens/d1.jpg">
+          <h3>Doce Sonho</h3>
         </div>
-        <button class="arrow right" onclick="scrollCarrossel('carrossel1', 1)">&#8250;</button>
+        <div class="produto"><img src="imagens/d2.jpg">
+          <h3>Nuvem de Algodão</h3>
+        </div>
+        <div class="produto"><img src="imagens/d3.png">
+          <h3>Encanto Floral</h3>
+        </div>
+        <div class="produto"><img src="imagens/d4.png">
+          <h3>Café & Conforto</h3>
+        </div>
+        <div class="produto"><img src="imagens/d5.jpg">
+          <h3>Luar Rosé</h3>
+          </p>
+        </div>
+        <div class="produto"><img src="imagens/d6.png">
+          <h3>Estrela da Noite</h3>
+          </p>
+        </div>
       </div>
+      <button class="arrow right" onclick="scrollCarrossel('carrossel1', 1)">&#8250;</button>
+    </div>
 
-     <!-- Destaques -->
+    <!-- Destaques -->
 
-     <h2>Combos Familia</h2>
-<div class="destaques">
-  
-  <div class="d1">
-    <img src="imagens/pose 1.png" alt="Pijama mãe e filha">
-  </div>
-  <div class="d1">  
-    <img src="imagens/pose 2.png" alt="Pijama pai e filho">
-  </div>
-</div>
+    <h2>Combos Familia</h2>
+    <div class="destaques">
+
+      <div class="d1">
+        <img src="imagens/pose 1.png" alt="Pijama mãe e filha">
+      </div>
+      <div class="d1">
+        <img src="imagens/pose 2.png" alt="Pijama pai e filho">
+      </div>
+    </div>
 
 
-      
+
     <!-- Serviços -->
     <section class="servicos">
       <h2>Serviços</h2>
@@ -123,37 +143,40 @@
       </div>
     </section>
 
-    
 
 
-<footer class="footer">
-  <div class="footer-left">
-    <div class="site-name">NK Pijamas</div>
-    <div class="social-icons">
-      <a href="https://wa.me/5599999999999  ">
-        <img src="imagens/zap.jpg" alt="icon">
-      </a>
-      <a href="https://www.instagram.com/moda_feminina_nk?igsh=bzZuNDJxaDVzYm5r">
-        <img src="imagens/insta.webp" alt="icon">
-    </div>
-  </div>
-  <div class="footer-right">
-    <nav class="menu">
-      <a href="Home.html">Início</a>
-      <a href="Catalogo.html">Catálogo</a>
-      <a href="sobre.html">Sobre</a>
-    </nav>
-  </div>
 
- <div class="footer-bottom">
-    <p>
-      NIKA Pijamas | CNPJ: <br>
-      Rua  - Maringá/PR - CEP: 89112-460<br>
-      © Direitos Reservados — <a href="https://www.nikapijamas.com.br">Home.html</a>
-    </p>
-  </div>
-</footer>
+    <footer class="footer-home">
+      <div class="footer-left">
+        <div class="site-name">NK Pijamas</div>
+        <div class="social-icons">
+          <a href="https://wa.me/5599999999999" target="_blank">
+            <img src="imagens/zap.jpg" alt="WhatsApp">
+          </a>
+          <a href="https://www.instagram.com/moda_feminina_nk?igsh=bzZuNDJxaDVzYm5r" target="_blank">
+            <img src="imagens/insta.webp" alt="Instagram">
+          </a>
+        </div>
+      </div>
 
-  <script src="Home.js"></script>
+      <div class="footer-right">
+        <nav class="menu">
+          <a href="Home.html">Início</a>
+          <a href="Catalogo.html">Catálogo</a>
+          <a href="sobre.html">Sobre</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          NK Pijamas | CNPJ: <br>
+          Rua - Maringá/PR - CEP: 89112-460<br>
+          © Direitos Reservados — <a href="Home.html">Home</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="Home.js"></script>
 </body>
+
 </html>
