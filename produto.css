@@ -1,4 +1,4 @@
-/* produto-style.css - Estilos específicos para a página de produto */
+
 
 /* ===================
    CONTAINER PRINCIPAL
@@ -304,7 +304,6 @@
   animation: fadeIn 0.4s ease-out;
 }
 
-/* Estados de loading */
 .loading {
   opacity: 0.7;
   pointer-events: none;
