@@ -262,7 +262,7 @@ function populateProductDetails(product) {
   );
   
   // Substitua pelo seu número de WhatsApp
-  whatsappLink.href = `https://wa.me/5599999999999?text=${message}`;
+  whatsappLink.href = `https://wa.me/5544999557818?text=${message}`;
 }
 
 // Função para mostrar erro quando produto não é encontrado
