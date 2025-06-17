@@ -1,4 +1,7 @@
 // Carrossel de Destaques simples (mantido de home/script.js)
+  function toggleMenu() {
+    document.querySelector('nav.menu').classList.toggle('active');
+  }
 (() => {
   const items = document.querySelectorAll('.carousel-destaques .carousel-item');
   let currentIndex = 0;

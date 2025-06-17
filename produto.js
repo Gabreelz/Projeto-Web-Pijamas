@@ -1,5 +1,7 @@
 // produto.js - JavaScript para página de produto
-
+  function toggleMenu() {
+    document.querySelector('nav.menu').classList.toggle('active');
+  }
 // Dados dos produtos
 const products = {
   'pijama-verao-feminino-1': {
