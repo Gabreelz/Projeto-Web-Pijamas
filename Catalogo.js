@@ -1,7 +1,7 @@
-// Carrossel de Destaques simples (mantido de home/script.js)
-  function toggleMenu() {
-    document.querySelector('nav.menu').classList.toggle('active');
-  }
+function toggleMenu() {
+  document.querySelector('nav.menu').classList.toggle('active');
+}
+
 (() => {
   const items = document.querySelectorAll('.carousel-destaques .carousel-item');
   let currentIndex = 0;
@@ -15,15 +15,15 @@
   setInterval(() => {
     currentIndex = (currentIndex + 1) % items.length;
     showItem(currentIndex);
-  }, 6000);
+  }, 10000); 
 })();
 
-// Função para rolar carrosséis (presente em ambos e consolidada)
+
 function scrollCarrossel(id, direction) {
   const carrossel = document.getElementById(id);
-  const cardWidth = 260; // Largura aproximada de cada produto + gap
+  const cardWidth = 260; 
   carrossel.scrollBy({
-    left: direction * cardWidth * 2,
+    left: direction * cardWidth * 1, 
     behavior: 'smooth'
   });
 }
